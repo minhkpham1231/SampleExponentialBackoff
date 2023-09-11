@@ -42,7 +42,7 @@ class MessageClient {
                         }
                         // Exponential backoff for retries
                         Thread.sleep(delayMillis)
-                        delayMillis *= listOf(1, 2, 3).random()
+                        delayMillis *= listOf(2, 3, 4).random()
                         retries++
                     }
                 }
